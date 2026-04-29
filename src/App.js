@@ -5,6 +5,8 @@ import Footer from './Footer';
 import SideBar from './SideBar';
 import Props from './Props';
 import Arrow from './Arrow_Functions';
+// import { Export,Export2, Export3 } from './Export';
+import Export, {Export2,Export3} from './Export'
 
 let name = "Harshit Shetty"
 let car_obj = {
@@ -46,6 +48,9 @@ function App() {
       <button type='button' value = "Click">Click 2</button>
     </Props>
     <Arrow name = "Harshit"/>
+    <Export/>
+    <Export2/>
+    <Export3/>
     </>
   );
 }
