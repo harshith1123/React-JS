@@ -4,6 +4,7 @@ import Header from './Header';
 import Footer from './Footer';
 import SideBar from './SideBar';
 import Props from './Props';
+import Arrow from './Arrow_Functions';
 
 let name = "Harshit Shetty"
 let car_obj = {
@@ -44,6 +45,7 @@ function App() {
       <p>Children Element 2</p>
       <button type='button' value = "Click">Click 2</button>
     </Props>
+    <Arrow name = "Harshit"/>
     </>
   );
 }
