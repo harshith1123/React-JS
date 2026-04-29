@@ -5,6 +5,8 @@ import App from './App';
 import Header from './Header';
 import Footer from './Footer';
 import SideBar from './SideBar';
+import Props_Class from './Props_Class';
+import {Props_Class2} from './Props_Class';
 import reportWebVitals from './reportWebVitals';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
@@ -16,6 +18,13 @@ root.render(
   // </>
   <React.StrictMode>
     <App />
+    <Props_Class desc = "Knowing about Props in the Class Component" age ="sd"/>
+    <Props_Class2>
+      <ol>
+        <li>Apple</li>
+        <li>Orange</li>
+      </ol>
+    </Props_Class2>
   </React.StrictMode>
 );
 
