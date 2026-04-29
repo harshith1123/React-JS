@@ -18,7 +18,7 @@ function Props(props){
 }
 
 Props.propTypes = {
-    name: PropTypes.string.isRequired,
+    
     age: PropTypes.number,
     isMarried: PropTypes.number,
     arr: PropTypes.array

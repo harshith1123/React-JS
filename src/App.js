@@ -7,6 +7,7 @@ import Props from './Props';
 import Arrow from './Arrow_Functions';
 // import { Export,Export2, Export3 } from './Export';
 import Export, {Export2,Export3} from './Export'
+import { ClassComponent } from './Class_Component';
 
 let name = "Harshit Shetty"
 let car_obj = {
@@ -43,7 +44,7 @@ function App() {
       <p>Children Element 1</p>
       <button type='button' value = "Click">Click 1</button>
     </Props> */}
-    <Props age = {a} isMarried = {false} arr={friends}>
+    <Props age = "ten" isMarried = {false} arr={friends}>
       <p>Children Element 2</p>
       <button type='button' value = "Click">Click 2</button>
     </Props>
@@ -51,6 +52,7 @@ function App() {
     <Export/>
     <Export2/>
     <Export3/>
+    <ClassComponent/>
     </>
   );
 }
