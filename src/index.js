@@ -8,6 +8,7 @@ import SideBar from './SideBar';
 import Props_Class from './Props_Class';
 import {Props_Class2} from './Props_Class';
 import reportWebVitals from './reportWebVitals';
+import Constructor from './Construtor';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -17,14 +18,15 @@ root.render(
   //   <SideBar/>
   // </>
   <React.StrictMode>
-    <App />
+    {/* <App />
     <Props_Class desc = "Knowing about Props in the Class Component" age ="sd"/>
     <Props_Class2>
       <ol>
         <li>Apple</li>
         <li>Orange</li>
       </ol>
-    </Props_Class2>
+    </Props_Class2> */}
+    <Constructor name = "Harshit"/>
   </React.StrictMode>
 );
 
