@@ -1,8 +1,10 @@
 import React, { Component } from 'react'
 
 export default class State extends Component {
+
+    // Without Constructor
     state = {
-            name: "abc",
+            name: this.props.name,
             count: 1
         }
 
