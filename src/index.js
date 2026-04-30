@@ -9,6 +9,7 @@ import Props_Class from './Props_Class';
 import {Props_Class2} from './Props_Class';
 import reportWebVitals from './reportWebVitals';
 import Constructor from './Construtor';
+import State from './State';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -26,7 +27,8 @@ root.render(
         <li>Orange</li>
       </ol>
     </Props_Class2> */}
-    <Constructor name = "Harshit"/>
+    {/* <Constructor name = "Harshit"/> */}
+    <State name = "Harshit"/>
   </React.StrictMode>
 );
 
