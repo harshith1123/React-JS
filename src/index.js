@@ -11,6 +11,7 @@ import reportWebVitals from './reportWebVitals';
 import Constructor from './Construtor';
 import State from './State';
 import Destructuring from './Destructuring';
+import Events from './Events';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 const fruits = ["Orange", "Mango", "Strawberry"]
@@ -31,7 +32,8 @@ root.render(
     </Props_Class2> */}
     {/* <Constructor name = "Harshit"/> */}
     {/* <State name = "Harshit"/> */}
-    <Destructuring name="Harshit Shetty" age = {22} arr ={fruits}/>
+    {/* <Destructuring name="Harshit Shetty" age = {22} arr ={fruits}/> */}
+    <Events name = "Harshit Gajanan Shetty"/>
   </React.StrictMode>
 );
 
