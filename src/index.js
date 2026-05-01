@@ -10,8 +10,10 @@ import {Props_Class2} from './Props_Class';
 import reportWebVitals from './reportWebVitals';
 import Constructor from './Construtor';
 import State from './State';
+import Destructuring from './Destructuring';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
+const fruits = ["Orange", "Mango", "Strawberry"]
 root.render(
   // <>
   //   <Header/>
@@ -28,7 +30,8 @@ root.render(
       </ol>
     </Props_Class2> */}
     {/* <Constructor name = "Harshit"/> */}
-    <State name = "Harshit"/>
+    {/* <State name = "Harshit"/> */}
+    <Destructuring name="Harshit Shetty" age = {22} arr ={fruits}/>
   </React.StrictMode>
 );
 
