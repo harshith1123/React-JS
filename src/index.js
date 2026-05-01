@@ -12,6 +12,7 @@ import Constructor from './Construtor';
 import State from './State';
 import Destructuring from './Destructuring';
 import Events from './Events';
+import BindEvent from './BindEvent';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 const fruits = ["Orange", "Mango", "Strawberry"]
@@ -33,7 +34,8 @@ root.render(
     {/* <Constructor name = "Harshit"/> */}
     {/* <State name = "Harshit"/> */}
     {/* <Destructuring name="Harshit Shetty" age = {22} arr ={fruits}/> */}
-    <Events name = "Harshit Gajanan Shetty"/>
+    {/* <Events name = "Harshit Gajanan Shetty"/> */}
+    <BindEvent/>
   </React.StrictMode>
 );
 
