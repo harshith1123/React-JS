@@ -13,6 +13,7 @@ import State from './State';
 import Destructuring from './Destructuring';
 import Events from './Events';
 import BindEvent from './BindEvent';
+import Mounting1 from './Mounting1';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 const fruits = ["Orange", "Mango", "Strawberry"]
@@ -35,7 +36,8 @@ root.render(
     {/* <State name = "Harshit"/> */}
     {/* <Destructuring name="Harshit Shetty" age = {22} arr ={fruits}/> */}
     {/* <Events name = "Harshit Gajanan Shetty"/> */}
-    <BindEvent/>
+    {/* <BindEvent/> */}
+    <Mounting1 city = "Bengaluru"/>
   </React.StrictMode>
 );
 
