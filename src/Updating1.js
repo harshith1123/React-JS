@@ -6,7 +6,7 @@ export default class Updating1 extends Component {
         super();
         this.changeState = this.changeState.bind(this);
         this.state = {
-            name1: "Harshit"
+            name1: "Harshit",
         }
     }
     changeState(){
@@ -18,7 +18,7 @@ export default class Updating1 extends Component {
   render() {
     return (
       <div>
-        <Updating2 name1 = {this.state.name1}/>
+        <Updating2 name1 = {this.state.name1} city={this.props.city}/>
         <button type="button" onClick={this.changeState}>Change State</button>
       </div>
     )

@@ -16,7 +16,30 @@ export default class Updating2 extends Component {
         // console.log("Not updated state");
         return null;
     }
+
+    // Should explicitly return a boolean value because of overriding it.
+    shouldComponentUpdate(nextProps,nextState){
+      console.log("Called shouldcomponentUpdate");
+      console.log("NextProps is:",nextProps);
+      console.log("NextState is:",nextState);
+      // return false;
+      return true;
+    }
+
+    getSnapshotBeforeUpdate(prevProps, prevState){
+      console.log("getSnapshotBeforeUpdate Method Called...");
+      console.log("PrevProps is:",prevProps);
+      console.log("PrevState is:",prevState);
+      return "Successfully got a Snapshot";
+    }
+    componentDidUpdate(prevProps,prevState,snapShot){
+      console.log("componentDidUpdate Method Called...");
+      console.log("PrevProps is:",prevProps);
+      console.log("PrevState is:",prevState);
+      console.log("SnapShot is:",snapShot);
+    }
   render() {
+    console.log("Render method called");
     console.log(this.state.name2)
     return (
       <div>

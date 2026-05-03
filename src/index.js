@@ -39,7 +39,7 @@ root.render(
     {/* <Events name = "Harshit Gajanan Shetty"/> */}
     {/* <BindEvent/> */}
     {/* <Mounting1 city = "Bengaluru"/> */}
-    <Updating1/>
+    <Updating1 city="Bengaluru"/>
   </React.StrictMode>
 );
 
