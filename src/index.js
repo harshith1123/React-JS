@@ -15,6 +15,8 @@ import Events from './Events';
 import BindEvent from './BindEvent';
 import Mounting1 from './Mounting1';
 import Updating1 from './Updating1';
+import Unmount1 from './Unmount1';
+import PropsAsMethod1 from './PropsAsMethod1';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 const fruits = ["Orange", "Mango", "Strawberry"]
@@ -39,7 +41,9 @@ root.render(
     {/* <Events name = "Harshit Gajanan Shetty"/> */}
     {/* <BindEvent/> */}
     {/* <Mounting1 city = "Bengaluru"/> */}
-    <Updating1 city="Bengaluru"/>
+    {/* <Updating1 city="Bengaluru"/> */}
+    {/* <Unmount1/> */}
+    <PropsAsMethod1/>
   </React.StrictMode>
 );
 
