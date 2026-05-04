@@ -20,6 +20,7 @@ import PropsAsMethod1 from './PropsAsMethod1';
 import Conditional_Rendering from './Conditional_Rendering';
 import List1 from './List1';
 import StylingComponent from './StylingComponent';
+import CSSThroughExternalFile from './CSSThroughExternalFile';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 const fruits = ["Orange", "Mango", "Strawberry"]
@@ -49,7 +50,8 @@ root.render(
     {/* <PropsAsMethod1/> */}
     {/* <Conditional_Rendering/> */}
     {/* <List1/> */}
-    <StylingComponent/>
+    {/* <StylingComponent/> */}
+    <CSSThroughExternalFile bool = {false}/>
   </React.StrictMode>
 );
 
