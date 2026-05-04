@@ -18,6 +18,7 @@ import Updating1 from './Updating1';
 import Unmount1 from './Unmount1';
 import PropsAsMethod1 from './PropsAsMethod1';
 import Conditional_Rendering from './Conditional_Rendering';
+import List1 from './List1';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 const fruits = ["Orange", "Mango", "Strawberry"]
@@ -45,7 +46,8 @@ root.render(
     {/* <Updating1 city="Bengaluru"/> */}
     {/* <Unmount1/> */}
     {/* <PropsAsMethod1/> */}
-    <Conditional_Rendering/>
+    {/* <Conditional_Rendering/> */}
+    <List1/>
   </React.StrictMode>
 );
 
