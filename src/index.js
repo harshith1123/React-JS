@@ -21,6 +21,8 @@ import Conditional_Rendering from './Conditional_Rendering';
 import List1 from './List1';
 import StylingComponent from './StylingComponent';
 import CSSThroughExternalFile from './CSSThroughExternalFile';
+import CSS_Module1 from './CSS_Module1';
+import CSS_Module2 from './CSS_Module2';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 const fruits = ["Orange", "Mango", "Strawberry"]
@@ -51,7 +53,9 @@ root.render(
     {/* <Conditional_Rendering/> */}
     {/* <List1/> */}
     {/* <StylingComponent/> */}
-    <CSSThroughExternalFile bool = {false}/>
+    {/* <CSSThroughExternalFile bool = {false}/> */}
+    <CSS_Module1/>
+    <CSS_Module2/>
   </React.StrictMode>
 );
 
