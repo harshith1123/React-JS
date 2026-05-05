@@ -23,6 +23,7 @@ import StylingComponent from './StylingComponent';
 import CSSThroughExternalFile from './CSSThroughExternalFile';
 import CSS_Module1 from './CSS_Module1';
 import CSS_Module2 from './CSS_Module2';
+import Bootstrap from './Bootstrap';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 const fruits = ["Orange", "Mango", "Strawberry"]
@@ -54,8 +55,9 @@ root.render(
     {/* <List1/> */}
     {/* <StylingComponent/> */}
     {/* <CSSThroughExternalFile bool = {false}/> */}
-    <CSS_Module1/>
-    <CSS_Module2/>
+    {/* <CSS_Module1/> */}
+    {/* <CSS_Module2/> */}
+    <Bootstrap/>
   </React.StrictMode>
 );
 
