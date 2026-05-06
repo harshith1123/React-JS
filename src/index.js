@@ -29,6 +29,7 @@ import UseStateHookWithObjects from './UseStateHookWithObjects';
 import UseStateHookWithArrays from './UseStateHookWithArrays';
 import UseEffectHook from './UseEffectHook';
 import ControlledComponentsUsingClass from './ControlledComponentsUsingClass';
+import ControlledComponentUsingFunction from './ControlledComponentUsingFunction';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 const fruits = ["Orange", "Mango", "Strawberry"]
@@ -68,7 +69,8 @@ root.render(
     {/* <UseStateHookWithArrays/> */}
     {/* <UseEffectHook/> */}
     {/* <App/> */}
-    <ControlledComponentsUsingClass/>
+    {/* <ControlledComponentsUsingClass/> */}
+    <ControlledComponentUsingFunction/>
   </React.StrictMode>
 );
 
