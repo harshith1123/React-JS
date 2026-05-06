@@ -26,6 +26,8 @@ import CSS_Module2 from './CSS_Module2';
 import Bootstrap from './Bootstrap';
 import UseStateHook from './UseStateHook';
 import UseStateHookWithObjects from './UseStateHookWithObjects';
+import UseStateHookWithArrays from './UseStateHookWithArrays';
+import UseEffectHook from './UseEffectHook';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 const fruits = ["Orange", "Mango", "Strawberry"]
@@ -61,7 +63,9 @@ root.render(
     {/* <CSS_Module2/> */}
     {/* <Bootstrap/> */}
     {/* <UseStateHook/> */}
-    <UseStateHookWithObjects/>
+    {/* <UseStateHookWithObjects/> */}
+    {/* <UseStateHookWithArrays/> */}
+    <UseEffectHook/>
   </React.StrictMode>
 );
 
