@@ -65,7 +65,8 @@ root.render(
     {/* <UseStateHook/> */}
     {/* <UseStateHookWithObjects/> */}
     {/* <UseStateHookWithArrays/> */}
-    <UseEffectHook/>
+    {/* <UseEffectHook/> */}
+    <App/>
   </React.StrictMode>
 );
 

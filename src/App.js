@@ -8,6 +8,11 @@ import Arrow from './Arrow_Functions';
 // import { Export,Export2, Export3 } from './Export';
 import Export, {Export2,Export3} from './Export'
 import { ClassComponent } from './Class_Component';
+import { createContext,useState } from 'react';
+import UseContext1 from './UseContext1';
+
+export const NameContext = createContext();
+export const StateContext = createContext();
 
 let name = "Harshit Shetty"
 let car_obj = {
@@ -26,6 +31,8 @@ else{
 const friends = ["Pavan","Vishal","Harsha"]
 
 function App() {
+  const [person, setPerson] = useState({'name': "Shreyata", age: 18})
+  const [car, setCar] = useState("BMW")
   return (
     <>
     {/* <h1>Content Starts </h1>
@@ -44,7 +51,7 @@ function App() {
       <p>Children Element 1</p>
       <button type='button' value = "Click">Click 1</button>
     </Props> */}
-    <Props age = {a} isMarried = {false} arr={friends}>
+    {/* <Props age = {a} isMarried = {false} arr={friends}>
       <p>Children Element 2</p>
       <button type='button' value = "Click">Click 2</button>
     </Props>
@@ -52,7 +59,13 @@ function App() {
     <Export/>
     <Export2/>
     <Export3/>
-    <ClassComponent/>
+    <ClassComponent/> */}
+    <NameContext.Provider value={"Harshit"}>
+    <StateContext.Provider value ={person}>
+      <UseContext1/>
+    </StateContext.Provider>
+      
+    </NameContext.Provider>
     </>
   );
 }
