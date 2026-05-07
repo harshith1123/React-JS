@@ -33,6 +33,7 @@ import ControlledComponentUsingFunction from './ControlledComponentUsingFunction
 import HandleMultipleInputViaClassInForms from './HandleMultipleInputViaClassInForms';
 import HandlingMultipleInputViaFunctioninForms from './HandlingMultipleInputViaFunctioninForms';
 import TextAreaSelectAndCheckboxes from './TextAreaSelectAndCheckboxes';
+import MultipleCheckboxesinForm from './MultipleCheckboxesinForm';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 const fruits = ["Orange", "Mango", "Strawberry"]
@@ -76,7 +77,8 @@ root.render(
     {/* <ControlledComponentUsingFunction/> */}
     {/* <HandleMultipleInputViaClassInForms/> */}
     {/* <HandlingMultipleInputViaFunctioninForms/> */}
-    <TextAreaSelectAndCheckboxes/>
+    {/* <TextAreaSelectAndCheckboxes/> */}
+    <MultipleCheckboxesinForm/>
   </React.StrictMode>
 );
 
