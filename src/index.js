@@ -35,6 +35,7 @@ import HandlingMultipleInputViaFunctioninForms from './HandlingMultipleInputViaF
 import TextAreaSelectAndCheckboxes from './TextAreaSelectAndCheckboxes';
 import MultipleCheckboxesinForm from './MultipleCheckboxesinForm';
 import ReactRef from './ReactRef';
+import UnControlled_Component from './UnControlled_Component';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 const fruits = ["Orange", "Mango", "Strawberry"]
@@ -80,7 +81,8 @@ root.render(
     {/* <HandlingMultipleInputViaFunctioninForms/> */}
     {/* <TextAreaSelectAndCheckboxes/> */}
     {/* <MultipleCheckboxesinForm/> */}
-    <ReactRef/>
+    {/* <ReactRef/> */}
+    <UnControlled_Component/>
   </React.StrictMode>
 );
 
