@@ -30,6 +30,7 @@ import UseStateHookWithArrays from './UseStateHookWithArrays';
 import UseEffectHook from './UseEffectHook';
 import ControlledComponentsUsingClass from './ControlledComponentsUsingClass';
 import ControlledComponentUsingFunction from './ControlledComponentUsingFunction';
+import HandleMultipleInputViaClassInForms from './HandleMultipleInputViaClassInForms';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 const fruits = ["Orange", "Mango", "Strawberry"]
@@ -70,7 +71,8 @@ root.render(
     {/* <UseEffectHook/> */}
     {/* <App/> */}
     {/* <ControlledComponentsUsingClass/> */}
-    <ControlledComponentUsingFunction/>
+    {/* <ControlledComponentUsingFunction/> */}
+    <HandleMultipleInputViaClassInForms/>
   </React.StrictMode>
 );
 
