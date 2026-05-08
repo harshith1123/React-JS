@@ -28,7 +28,6 @@ else{
   msg = "Bye!..."
 }
 const friends = ["Pavan","Vishal","Harsha"]
-
 function App() {
   const [person, setPerson] = useState({'name': "Shreyata", age: 18})
   const [car, setCar] = useState("BMW")
