@@ -1,0 +1,23 @@
+import React from 'react'
+import { NavLink } from 'react-router-dom'
+
+function NavLinking() {
+  const NavStyle = ({isActive}) =>{
+    return{
+      fontSize: isActive? "1.25rem" : "1.2rem",
+      fontWeight: isActive? "bold" : "Normal",
+      // color: isActive? "Green" : "aqua"
+    }
+  }
+  return (
+    <div>
+      <nav>
+        <NavLink style={NavStyle}to="/">Home</NavLink>
+        <NavLink style={NavStyle} to="/about">About</NavLink>
+        <NavLink style={NavStyle} to="/contact">Contact</NavLink>
+      </nav>
+    </div>
+  )
+}
+
+export default NavLinking

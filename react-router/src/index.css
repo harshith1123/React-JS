@@ -11,3 +11,24 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+nav{
+  background-color: grey;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+}
+nav a{
+  margin: 20px;
+  text-decoration: none;
+  font-size: 1.2rem;
+  color:aqua
+}
+nav a:hover{
+  color:blueviolet
+}
+
+/* Through Css Making Active Class adding style */
+/* nav a.active{
+  font-size: 1.26rem;
+  font-weight: bold;
+} */
