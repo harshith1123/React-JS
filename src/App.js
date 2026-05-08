@@ -19,7 +19,6 @@ let car_obj = {
   name: "Jaguar",
   color: "Red"
 }
-
 let a = 19;
 let msg = "";
 if(a>10){

@@ -37,6 +37,8 @@ import MultipleCheckboxesinForm from './MultipleCheckboxesinForm';
 import ReactRef from './ReactRef';
 import UnControlled_Component from './UnControlled_Component';
 import CallBackRef from './CallBackRef';
+import UseRef1 from './UseRef1';
+import UseRef2 from './UseRef2';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 const fruits = ["Orange", "Mango", "Strawberry"]
@@ -84,9 +86,14 @@ root.render(
     {/* <MultipleCheckboxesinForm/> */}
     {/* <ReactRef/> */}
     {/* <UnControlled_Component/> */}
-    <CallBackRef/>
+    {/* <CallBackRef/> */}
+    {/* <UseRef1/> */}
+    <UseRef2/>
   </React.StrictMode>
 );
+// root.render(
+//     <UseRef2/>
+// );
 
 // If you want to start measuring performance in your app, pass a function
 // to log results (for example: reportWebVitals(console.log))
