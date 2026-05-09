@@ -39,6 +39,8 @@ function App() {
       <Routes>
         <Route path='/' element={<Home/>}/>
         <Route path= '/products' element={<Products/>}>
+        {/* By clicking on products incase any of the child component need to display at that time index props will be used */}
+          <Route index element={<Pants/>}/>
           <Route path='shirts' element={<Shirts/>}/>
           <Route path='pants' element={<Pants/>}/>
         </Route>

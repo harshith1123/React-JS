@@ -11,6 +11,7 @@ function Products() {
             <Link to={"shirts"}>Shirts</Link>
             <Link to={"pants"}>Pants</Link>
         </div>
+        {/* Allows to display one of the child components when any one of the link by clicking */}
         <Outlet/>    
     </>
     
