@@ -6,6 +6,7 @@ import About from './Components/About';
 import Contact from './Components/Contact';
 import Linking from './Components/Linking';
 import NavLinking from './Components/NavLinking';
+import PageNotFound from './Components/PageNotFound';
 
 function App() {
   const navigate = useNavigate();
@@ -36,6 +37,7 @@ function App() {
         <Route path='/' element={<Home/>}/>
         <Route path= '/about' element={<About/>}/>
         <Route path = '/contact' element={<Contact/>}/>
+        <Route path = '*' element={<PageNotFound/>}/>
       </Routes>
       {/* <button type="submit" onClick={()=>navigate('/about') }>About</button> */}
       {/* <button type="submit" onClick={()=>navigate('/contact') }>Contact</button> */}
