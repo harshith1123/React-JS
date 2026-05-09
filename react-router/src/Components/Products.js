@@ -8,11 +8,11 @@ function Products() {
     <>
         <div className='products'>
             <h1>This is the Products Component</h1>
-            {/* Below two are the Relative Path */}
+            {/* Below two paths were the Relative Path */}
             {/* <Link to={"shirts"}>Shirts</Link>
             <Link to={"pants"}>Pants</Link> */}
 
-            {/* Below two are the absolute path */}
+            {/* Below two paths were the absolute path */}
             <Link to={"/products/shirts"}>Shirts</Link>
             <Link to={"/products/pants"}>Pants</Link>
         </div>
