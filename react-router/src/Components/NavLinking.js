@@ -16,6 +16,7 @@ function NavLinking() {
         <NavLink style={NavStyle} to="/products">Products</NavLink>
         <NavLink style={NavStyle} to="/about">About</NavLink>
         <NavLink style={NavStyle} to="/contact">Contact</NavLink>
+        <NavLink style={NavStyle} to="/users">Users</NavLink>
       </nav>
     </div>
   )

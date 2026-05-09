@@ -10,6 +10,9 @@ import PageNotFound from './Components/PageNotFound';
 import Products from './Components/Products';
 import Shirts from './Components/Shirts';
 import Pants from './Components/Pants';
+import Users from './Components/Users';
+import UserInfo from './Components/UserInfo';
+import UserAdmin from './Components/UserAdmin';
 
 function App() {
   const navigate = useNavigate();
@@ -46,6 +49,11 @@ function App() {
         </Route>
         <Route path= '/about' element={<About/>}/>
         <Route path = '/contact' element={<Contact/>}/>
+        <Route path='/users' element={<Users/>}>
+        {/* Here the id will accept the string value so that if I put the url with the admin first it will checked whether any fixed route(static) is there or not. If not then it will dynamically route to UserInfo*/}
+          <Route path=':id' element={<UserInfo/>}/>
+          <Route path='admin' element={<UserAdmin/>}/>
+        </Route>
         <Route path = '*' element={<PageNotFound/>}/>
       </Routes>
       {/* <button type="submit" onClick={()=>navigate('/about') }>About</button> */}
