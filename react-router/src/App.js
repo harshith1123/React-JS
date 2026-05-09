@@ -7,6 +7,9 @@ import Contact from './Components/Contact';
 import Linking from './Components/Linking';
 import NavLinking from './Components/NavLinking';
 import PageNotFound from './Components/PageNotFound';
+import Products from './Components/Products';
+import Shirts from './Components/Shirts';
+import Pants from './Components/Pants';
 
 function App() {
   const navigate = useNavigate();
@@ -35,6 +38,10 @@ function App() {
     <NavLinking/>
       <Routes>
         <Route path='/' element={<Home/>}/>
+        <Route path= '/products' element={<Products/>}>
+          <Route path='shirts' element={<Shirts/>}/>
+          <Route path='pants' element={<Pants/>}/>
+        </Route>
         <Route path= '/about' element={<About/>}/>
         <Route path = '/contact' element={<Contact/>}/>
         <Route path = '*' element={<PageNotFound/>}/>

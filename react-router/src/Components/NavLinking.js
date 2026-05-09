@@ -12,7 +12,8 @@ function NavLinking() {
   return (
     <div>
       <nav>
-        <NavLink style={NavStyle}to="/">Home</NavLink>
+        <NavLink style={NavStyle} to="/">Home</NavLink>
+        <NavLink style={NavStyle} to="/products">Products</NavLink>
         <NavLink style={NavStyle} to="/about">About</NavLink>
         <NavLink style={NavStyle} to="/contact">Contact</NavLink>
       </nav>
