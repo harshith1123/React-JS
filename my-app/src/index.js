@@ -39,6 +39,7 @@ import UnControlled_Component from './UnControlled_Component';
 import CallBackRef from './CallBackRef';
 import UseRef1 from './UseRef1';
 import UseRef2 from './UseRef2';
+import FormValidationWithoutLibrary from './FormValidationWithoutLibrary';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 const fruits = ["Orange", "Mango", "Strawberry"]
@@ -89,7 +90,8 @@ root.render(
     {/* <CallBackRef/> */}
     {/* <UseRef1/> */}
     {/* <UseRef2/> */}
-    <App/>
+    {/* <App/> */}
+    <FormValidationWithoutLibrary/>
   </React.StrictMode>
 );
 // root.render(
