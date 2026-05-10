@@ -88,7 +88,8 @@ root.render(
     {/* <UnControlled_Component/> */}
     {/* <CallBackRef/> */}
     {/* <UseRef1/> */}
-    <UseRef2/>
+    {/* <UseRef2/> */}
+    <App/>
   </React.StrictMode>
 );
 // root.render(

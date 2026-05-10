@@ -10,9 +10,16 @@ import Export, {Export2,Export3} from './Export'
 import { ClassComponent } from './Class_Component';
 import { createContext,useState } from 'react';
 import UseContext1 from './UseContext1';
+import { Suspense, lazy } from 'react';
+// import Lazy_Loading1 from './Lazy_Loading1';
+// import Lazy_Loading1 from './Lazy_Loading1';
+// Lazy function is a function that returns callback function which dynamically import
+const Lazy1 = lazy(()=> import ('./Lazy_Loading1'));
+const Lazy2 = lazy(()=> import ('./Lazy_Loading2'));
 
 export const NameContext = createContext();
 export const StateContext = createContext();
+
 
 let name = "Harshit Shetty"
 let car_obj = {
@@ -58,12 +65,17 @@ function App() {
     <Export2/>
     <Export3/>
     <ClassComponent/> */}
-    <NameContext.Provider value={"Harshit"}>
+    {/* <NameContext.Provider value={"Harshit"}>
     <StateContext.Provider value ={person}>
       <UseContext1/>
     </StateContext.Provider>
       
-    </NameContext.Provider>
+    </NameContext.Provider> */}
+    {/* <Lazy_Loading1/> */}
+    <Suspense fallback={<div>LOADING...</div>}>
+      <Lazy1/>
+      <Lazy2/>
+    </Suspense>
     </>
   );
 }
