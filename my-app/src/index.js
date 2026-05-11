@@ -40,6 +40,7 @@ import CallBackRef from './CallBackRef';
 import UseRef1 from './UseRef1';
 import UseRef2 from './UseRef2';
 import FormValidationWithoutLibrary from './FormValidationWithoutLibrary';
+import Formik from './Formik';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 const fruits = ["Orange", "Mango", "Strawberry"]
@@ -91,7 +92,8 @@ root.render(
     {/* <UseRef1/> */}
     {/* <UseRef2/> */}
     {/* <App/> */}
-    <FormValidationWithoutLibrary/>
+    {/* <FormValidationWithoutLibrary/> */}
+    <Formik/>
   </React.StrictMode>
 );
 // root.render(
