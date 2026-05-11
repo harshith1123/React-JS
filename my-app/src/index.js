@@ -42,6 +42,7 @@ import UseRef2 from './UseRef2';
 import FormValidationWithoutLibrary from './FormValidationWithoutLibrary';
 import Formik from './Formik';
 import FormikComponent from './FormikComponent';
+import ReactBootstrap from './ReactBootstrap';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 const fruits = ["Orange", "Mango", "Strawberry"]
@@ -95,7 +96,8 @@ root.render(
     {/* <App/> */}
     {/* <FormValidationWithoutLibrary/> */}
     {/* <Formik/> */}
-    <FormikComponent/>
+    {/* <FormikComponent/> */}
+    <ReactBootstrap/>
   </React.StrictMode>
 );
 // root.render(
