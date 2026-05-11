@@ -1,5 +1,6 @@
 import React from 'react'
 import {useFormik} from 'formik'
+import { YupSchema } from './YupSchema';
 
 function Formik() {
 
@@ -18,8 +19,9 @@ function Formik() {
     //     }
     // });
 
-    const {handleChange,handleSubmit,values} =useFormik({
+    const {handleChange,handleSubmit,values,errors} =useFormik({
         initialValues:formikInitialValue,
+        validationSchema: YupSchema,
         onSubmit: (values)=>{
             console.log(values);
             console.log(values.name);
@@ -37,11 +39,13 @@ function Formik() {
         {/* <input type="text" name="name" value={formik.values.name} onChange={formik.handleChange}/> */}
         <input type="text" name="name" value={values.name} onChange={handleChange}/>
         <br />
+        <span style={{color:"red"}}>{errors.name}</span>
         <br />
         <label htmlFor="">Enter Email:</label>
         {/* <input type="email" name="email" value={formik.values.email} onChange={formik.handleChange}/> */}
         <input type="email" name="email" value={values.email} onChange={handleChange}/>
         <br />
+        <span style={{color:"red"}}>{errors.email}</span>
         <br />
         <input type="submit" value="Submit" />
       </form>
