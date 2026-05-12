@@ -48,6 +48,7 @@ import Images from './Images';
 import CardBootstrap from './CardBootStrap';
 import NavbarBoostrap from './NavbarBoostrap';
 import CarouselBS from './CarouselBS.js';
+import UseReducerHook from './UseReducerHook.js';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 // const fruits = ["Orange", "Mango", "Strawberry"]
@@ -107,7 +108,8 @@ root.render(
     {/* <Images/> */}
     {/* <CardBootstrap/> */}
     {/* <NavbarBoostrap/> */}
-    <CarouselBS/>
+    {/* <CarouselBS/> */}
+    <UseReducerHook/>
   </React.StrictMode>
 );
 // root.render(
