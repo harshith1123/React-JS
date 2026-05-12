@@ -47,6 +47,7 @@ import GridBootstrap from './GridBootstrap';
 import Images from './Images';
 import CardBootstrap from './CardBootStrap';
 import NavbarBoostrap from './NavbarBoostrap';
+import CarouselBS from './CarouselBS.js';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 // const fruits = ["Orange", "Mango", "Strawberry"]
@@ -105,7 +106,8 @@ root.render(
     {/* <GridBootstrap/> */}
     {/* <Images/> */}
     {/* <CardBootstrap/> */}
-    <NavbarBoostrap/>
+    {/* <NavbarBoostrap/> */}
+    <CarouselBS/>
   </React.StrictMode>
 );
 // root.render(
