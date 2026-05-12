@@ -43,9 +43,10 @@ import FormValidationWithoutLibrary from './FormValidationWithoutLibrary';
 import Formik from './Formik';
 import FormikComponent from './FormikComponent';
 import ReactBootstrap from './ReactBootstrap';
+import GridBootstrap from './GridBootstrap';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
-const fruits = ["Orange", "Mango", "Strawberry"]
+// const fruits = ["Orange", "Mango", "Strawberry"]
 root.render(
   // <>
   //   <Header/>
@@ -97,7 +98,8 @@ root.render(
     {/* <FormValidationWithoutLibrary/> */}
     {/* <Formik/> */}
     {/* <FormikComponent/> */}
-    <ReactBootstrap/>
+    {/* <ReactBootstrap/> */}
+    <GridBootstrap/>
   </React.StrictMode>
 );
 // root.render(
