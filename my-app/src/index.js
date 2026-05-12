@@ -46,6 +46,7 @@ import ReactBootstrap from './ReactBootstrap';
 import GridBootstrap from './GridBootstrap';
 import Images from './Images';
 import CardBootstrap from './CardBootStrap';
+import NavbarBoostrap from './NavbarBoostrap';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 // const fruits = ["Orange", "Mango", "Strawberry"]
@@ -103,7 +104,8 @@ root.render(
     {/* <ReactBootstrap/> */}
     {/* <GridBootstrap/> */}
     {/* <Images/> */}
-    <CardBootstrap/>
+    {/* <CardBootstrap/> */}
+    <NavbarBoostrap/>
   </React.StrictMode>
 );
 // root.render(
