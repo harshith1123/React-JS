@@ -44,6 +44,7 @@ import Formik from './Formik';
 import FormikComponent from './FormikComponent';
 import ReactBootstrap from './ReactBootstrap';
 import GridBootstrap from './GridBootstrap';
+import Images from './Images';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 // const fruits = ["Orange", "Mango", "Strawberry"]
@@ -99,7 +100,8 @@ root.render(
     {/* <Formik/> */}
     {/* <FormikComponent/> */}
     {/* <ReactBootstrap/> */}
-    <GridBootstrap/>
+    {/* <GridBootstrap/> */}
+    <Images/>
   </React.StrictMode>
 );
 // root.render(
