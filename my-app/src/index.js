@@ -49,6 +49,7 @@ import CardBootstrap from './CardBootStrap';
 import NavbarBoostrap from './NavbarBoostrap';
 import CarouselBS from './CarouselBS.js';
 import UseReducerHook from './UseReducerHook.js';
+import FetchAPI from './FetchAPI.js';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 // const fruits = ["Orange", "Mango", "Strawberry"]
@@ -109,7 +110,8 @@ root.render(
     {/* <CardBootstrap/> */}
     {/* <NavbarBoostrap/> */}
     {/* <CarouselBS/> */}
-    <UseReducerHook/>
+    {/* <UseReducerHook/> */}
+    <FetchAPI/>
   </React.StrictMode>
 );
 // root.render(
