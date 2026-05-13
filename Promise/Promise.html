@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const p = new Promise((resolve,reject)=>{   
+            document.writeln("Pending state...");
+            setTimeout(()=>{
+                let a=2+8;
+                if(a===5){
+                    document.writeln("Under Resolve state");
+                    resolve("Success");
+                }
+                else{
+                    document.writeln("Under Reject State");
+                    reject("Failed");
+                }
+            },3000)
+        });
+        console.log(p);
+        p.then((msg)=>{document.writeln(msg +"--> Promise Fullfilled")})
+        .catch((msg)=>{document.writeln(msg + "--> Promise unfullfilled")})
+    </script>
+</body>
+</html>
