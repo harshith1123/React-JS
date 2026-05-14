@@ -1,9 +1,11 @@
 import GetRequestViaAxios from './GetRequestViaAxios';
+import PostRequestViaAxios from './PostRequestViaAxios';
 
 function App() {
   return (
     <>
-      <GetRequestViaAxios/>
+      {/* <GetRequestViaAxios/> */}
+      <PostRequestViaAxios/>
     </>
     
   );
