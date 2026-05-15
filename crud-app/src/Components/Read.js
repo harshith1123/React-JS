@@ -20,6 +20,22 @@ function Read() {
     useEffect(()=>{
         retrieveData();
     },[])
+
+   const handleDelete =(id)=>{
+        axios.delete(`https://crud-api.free.beeceptor.com/crud-api/${id}`)
+        .then(()=>{
+            alert("Successfully Deleted the Data");
+            retrieveData();
+        })
+    }
+
+    function setDataInLocalStorage(item){
+        console.log(item);
+        localStorage.setItem('id',item.id);
+        localStorage.setItem('name',item.u_name);
+        localStorage.setItem('email',item.u_email);
+        localStorage.setItem('age',item.u_age);
+    }
     
   return (
     <div>
@@ -53,13 +69,11 @@ function Read() {
                                         <td>{item.u_age}</td>
                                         <td>
                                         <Link to="/edit">
-                                            <button type="submit" className='btn btn-success'>Edit</button>
+                                            <button type="submit" className='btn btn-success' onClick={()=> setDataInLocalStorage(item)}>Edit</button>
                                         </Link>                                            
                                         </td>
-                                        <td>
-                                            <Link to="/delete">
-                                                <button type="submit" className='btn btn-danger'>Delete</button>
-                                            </Link>
+                                        <td>                                            
+                                            <button type="submit" className='btn btn-danger' onClick={()=> {if(window.confirm("Are you sure want to delete the Data?")){ handleDelete(item.id)}}}>Delete</button>
                                         </td>
                                     </tr>
                                 </>
